@@ -1,0 +1,14 @@
+<h1>Liquors</h1>
+<div>
+{% for liquor in liquor_list %}
+  <div class="liquor-listed">
+    <div class="maker">
+      maker: {{ liquor.maker.name }}
+    </div>
+    <div class="name">
+      name: {{ liquor.name }}
+    </div>
+  </div>
+  <br>
+{% endfor %}
+</div>
